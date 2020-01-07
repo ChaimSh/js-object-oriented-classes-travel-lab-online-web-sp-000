@@ -29,10 +29,10 @@ class Driver{
     this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
   }
-    avenueToInt( avenue ) { 
+    avenueToInt( avenue ) {
       return eastWest.indexOf( avenue );
     }
-  
+
     blocksTravelled(){
       let horizontal = this.avenueToInt( this.endingLocation.horizontal ) - this.avenueToInt(this.beginningLocation.horizontal);
       let vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
