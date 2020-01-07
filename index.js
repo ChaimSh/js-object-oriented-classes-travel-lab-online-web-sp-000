@@ -8,6 +8,8 @@ class Driver{
     // currentYear - startDate or driver.startDate
     let endDate = new Date(year, 1, 1)
 
-    return ((endDate.getTime() - this.startDate.getTime()) / 31536000000).toFixed(0);
+    let calculation = ((endDate.getTime() - this.startDate.getTime()) / 31536000000).toFixed(0);
+
+    return parseInt(calculation, 10)
   }
 }
