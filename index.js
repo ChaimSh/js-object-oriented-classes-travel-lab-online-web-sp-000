@@ -7,6 +7,6 @@ class Driver{
     // number of years since drivers startDate
     // currentYear - startDate or driver.startDate
     let currentDate = new Date(year, 1, 1)
-    return currentDate - startDate
+    return currentDate - this.startDate
   }
 }
