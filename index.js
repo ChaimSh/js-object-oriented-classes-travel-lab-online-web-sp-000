@@ -29,7 +29,20 @@ class Driver{
     this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
   }
+    avenueToInt( avenue ) { 
+      return eastWest.indexOf( avenue );
+    }
+  
     blocksTravelled(){
-
+      let horizontal = this.avenueToInt( this.endingLocation.horizontal ) - this.avenueToInt(this.beginningLocation.horizontal);
+      let vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
+      return Math.abs(horizontal) + Math.abs(vertical);
+    }
+    estimatedTime(peak){
+      if (peak) {
+        return this.blocksTravelled() / 2;
+      } else {
+        return this.blocksTravelled() / 3
+      }
     }
   }
