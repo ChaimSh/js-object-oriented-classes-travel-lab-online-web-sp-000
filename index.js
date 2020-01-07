@@ -4,7 +4,7 @@ class Driver{
     this.startDate = new Date( startDate );
   }
   yearsExperienceFromBeginningOf(year) {
-  
+
     let endDate = new Date(year, 1, 1)
 
     let calculation = ((endDate.getTime() - this.startDate.getTime()) / 31536000000).toFixed(0);
@@ -18,5 +18,5 @@ class Driver{
     this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
   }
-  
+
   }
