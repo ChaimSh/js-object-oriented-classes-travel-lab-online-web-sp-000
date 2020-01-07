@@ -7,7 +7,7 @@ class Driver{
     // number of years since drivers startDate
     // currentYear - startDate or driver.startDate
     let currentDate = new Date(year, 1, 1)
-    
+
     return ((currentDate.getTime() - this.startDate.getTime()) / 31536000000).toFixxed(0);
   }
 }
